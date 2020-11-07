@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hijabers Community</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Link ini berfungsi untuk memanggit framework bootstrap yang akan digunakan dalam file html-->
+
+<meta charset="UTF-8">
+<!-- menjelaskan bahwa halaman web tersebut telah memberi informasi terhadap browser dan search engine untuk melakukan pengkodean karakter sesuai ketentuan UTF-8.-->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--tag ini digunakan untuk menyimpan deskripsi singkat suatu web.-->
+
+<style> 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background-image: url(background.jpg);
+  color: #16a596;
+  border-bottom: 4px solid;
+  border-color: #fadcaa;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #e19999;
+  margin-bottom: 0px;
+  box-shadow: 0 0 2px 2px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.kotak{
+    border: 1px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+ 
+.kotak h3{
+    background-color: #f05454;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+ 
+.kotak img{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+.kotak p{
+    margin-bottom: 10px;
+}
+
+
+.side {
+  /* membuat dua kolom tidak sama yang terletak di samping satu sama lain, kelas ini untuk kolom sebelah kiri*/
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #fae3d9;;
+  padding: 20px;
+}
+
+.main {   
+  /* membuat dua kolom tidak sama yang terletak di samping satu sama lain, kelas ini untuk kolom sebelah kanan*/
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: #ffbbcc;
+  padding: 20px;
+}
+
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+#more {display: none;}
+footer{
+    clear: both;
+    background-color: #f05454;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+</style>
+</head>
+<body onpageshow="myFunction1()">
+
+<script>
+function myFunction() {
+  alert("Halaman Anda akan di Alihkan !");
+}
+function myFunction1() {
+  alert("Selamat Datang Di Website Hijabers Community");
+}
+</script>
+
+<div class="navbar">
+  <a  href="uts_PutriNabila.html"><i class="glyphicon glyphicon-home"> <!-- kelas ini untuk menggunaka bootstrap dengan logo home--> </i> Home</a>
+  <a onclick="myFunction()" href="aboutUs.html">About Us</a>
+  <a onclick="myFunction()" href="regis.html" class="right"><i onclick="myFunction()" class="glyphicon glyphicon-user"><!-- kelas ini untuk menggunaka bootstrap dengan logo user--></i> Registrasi</a>
+</div>
+<div class="header">
+  <img src="hijab.png" width="100" height="100">
+  <h1 style="font-family: comicsans;">Hijabers Community</h1>
+  <h3> Komunitas Hijabers merupakan sekumpulan individu yang ingin membagikan tutorial hijab, kisah inspiratif, dan sharing bersama</h3>
+  <p>"Ini bukan sekadar Hijab, ini adalah kunci kami untuk menuju surga."</p>
+</div>
+
+<div class="row">
+<div class="side">
+  <div class="kotak">
+  <h3>Kegiatan </h3>
+   <ul> <!-- untuk membuat tampilan html berupa list-->
+    <li><a style="font-size: 25px" href="gathering.html">Gathering</a></li>
+    <li><a style="font-size: 25px" href="talkshow.html">Talk show</a></li>
+    <li><a style="font-size: 25px" href="peduli.html">Peduli Sesama</a></li>
+    </ul>
+  </div>
+  <h1>Potret dalam Komunitas</h1>
+  <hr style="border-color: pink">
+  <h3>Buka Bersama Hijabers Community</h3>
+  <div class="fakeimg" style="height:200px;">
+    <img src="hijab3.jpeg" height="150" width="275px">
+  </div>
+  <hr style="border-color: pink">
+  <h3>Sharing Bersama Hijabers Community</h3>
+  <div class="fakeimg" style="height:200px;">
+    <img src="hijab4.jpeg" height="200" width="275px">
+  </div>  
+  </div>
+  <div class="main">
+    <h3>Story Hijab Gita Savitri</h3>
+    <h5>Dipubliasikan, 25 Juni 2019</h5>
+    <div class="fakeimg" style="height:350px;">
+      <img src="hijab2.jpeg" height="300" width="600">
+    </div>
+    <p>Assalamualaikum all !!! <br>
+      Kali ini ada kisah inspiratif dari Gita Savitri tentang dirinya yang memutuskan untuk berhijab. Kalian penasaran tidak sih apa ya yang membuat Ka Gita berfikir untuk memutuskan mengenakan hijab. Yuk Simak Video Penjelasnnya <a href="https://youtu.be/VupTDPzoLTU"> klik disini.</a>
+    </p>
+    <hr>
+    <h3>Tutorial Hijab Ala Wirda Mansur</h3>
+    <div class="fakeimg" style="height:350px;">
+      <img src="hijab1.jpeg" height="300" width="600" >
+    </div>
+    <br>
+    <p>Assalamualaikum teman-teman Semua..!!!</p>
+    <p>Bagaimana kabar kalian semua ? Semoga semua baik-baik saja ya. <br>
+    Oh iya, kali ini kita akan Sharing nih gimana ya cara Wirda Mansur mengenakan Hijab. Seperti yang kita Lihat, bahwa hijab yang dikenakan Wirda sangat menarik ya. Kalian Penasaran tidak dengan tutorial bagaimana cara mengenakan hijab Ala Wirda Mansur ? Yuk Langsung Saja <a href="https://youtu.be/CfgsQKPqhx4"> klik disini.</a>
+    </p>
+  </div>
+<footer>
+  © Hijabers Community
+</footer>
+
+</body>
+</html>
